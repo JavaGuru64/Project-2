@@ -36,6 +36,10 @@ public class OhmsLawServlet extends HttpServlet {
        String volts = request.getParameter("volts").replaceAll("[\\s]", "");
        String url = "/index.jsp";
       
+       double a;
+       double o;
+       double v;
+       
        if((amps.length() > 0 && ohms.length () > 0 
        || amps.length() > 0 && volts.length() > 0 
        || ohms.length() > 0 && volts.length() > 0))
@@ -43,13 +47,31 @@ public class OhmsLawServlet extends HttpServlet {
            try{
                 if(amps.length() == 0)
                 {
-                    amps = String.format("%12.8f",
-                    OhmsLaw.calcAmps(Double.parseDouble(ohms), Double.parseDouble(volts)));
+                    o = Double.parseDouble(ohms);
+                    v = Double.parseDouble(volts);
+                    if(!( o > -.000000001 && o < .000000001))
+                    {
+                        amps = String.format("%12.8f", OhmsLaw.calcAmps(o, v));
+                    }
+                    else
+                    {
+                        amps = "DNE";
+                    }
                 }
                 else if(ohms.length() == 0)
                 {
-                    ohms = String.format("%12.8f",
-                    OhmsLaw.calcOhms(Double.parseDouble(amps), Double.parseDouble(volts)));
+                    a = Double.parseDouble(ohms);
+                    v = Double.parseDouble(volts);
+                    
+                    if(!( a > -.000000001 && a < .000000001))
+                    {
+                        ohms = String.format("%12.8f", OhmsLaw.calcOhms(a, v));
+                    }
+                    else
+                    {
+                        amps = "DNE";
+                    }
+                    
                 }
                 else if(volts.length() == 0)
                 {
