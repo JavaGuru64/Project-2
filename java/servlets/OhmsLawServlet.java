@@ -60,7 +60,7 @@ public class OhmsLawServlet extends HttpServlet {
                 }
                 else if(ohms.length() == 0)
                 {
-                    a = Double.parseDouble(ohms);
+                    a = Double.parseDouble(amps);
                     v = Double.parseDouble(volts);
                     
                     if(!( a > -.000000001 && a < .000000001))
