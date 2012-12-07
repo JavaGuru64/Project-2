@@ -1,0 +1,32 @@
+/* 
+    Document   : main
+    Created on : Nov 24, 2012, 2:11:33 PM
+    Author     : Joshua
+    Description:
+        General styling for the webpages.
+*/
+
+h2{
+    font-size: 48px;
+}
+
+.copy{
+    background-color: rgba(0, 75, 0, .80);
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#main{
+   width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#title{
+    background-color: rgba(0, 0, 0, .75);
+    width: 400px;
+    font-size: 72px;
+    text-align: center;
+}

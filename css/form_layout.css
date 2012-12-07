@@ -1,0 +1,40 @@
+/* 
+    Document   : form_layout
+    Created on : Nov 24, 2012, 2:05:08 PM
+    Author     : Joshua
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+.form1{
+    height: 400px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.form2{
+    height: 300px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.left{
+    float: left;
+    padding: 25px;
+}
+
+#form1_submit{
+    padding: 25px;
+}
+
+#form2_submit{
+    padding: 25px;
+}
+
+.clear{
+    clear: both;
+}

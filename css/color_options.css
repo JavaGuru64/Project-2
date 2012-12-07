@@ -1,0 +1,16 @@
+/* 
+    Document   : color_options
+    Created on : Nov 24, 2012, 2:04:45 PM
+    Author     : Joshua
+    Description:
+        Styles the option box items
+*/
+
+body{
+    background-image:  url("http://localhost:8080/Project2/images/pcb.jpg");
+    color: #FFFFFF;
+}
+
+body form{
+    background-color: rgba(0, 0, 255, .75);
+}
